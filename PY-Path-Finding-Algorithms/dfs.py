@@ -23,8 +23,8 @@ def DFS(tree, root, goals):
         if node in goals:
             isDone = True
             break
-        opens.pop(0)
 
+        opens.pop(0)
         childNodes = tree.get(node)
         if(childNodes):
             opens[:0] = childNodes
