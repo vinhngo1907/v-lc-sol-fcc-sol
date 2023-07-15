@@ -24,6 +24,7 @@ def BFS(tree, root, goals):
         childNodes = tree.get(node)
         if(childNodes):
             opens.extend(childNodes)
+    
     print('\nBFS')
     if(isDone):
         print(' => '.join(closed))
