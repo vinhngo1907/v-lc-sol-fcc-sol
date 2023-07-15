@@ -1,4 +1,4 @@
-# v-lc-sol
+# v-lc-sol-fcc-sol
 
 ## Các bước đóng góp vào repo
 
