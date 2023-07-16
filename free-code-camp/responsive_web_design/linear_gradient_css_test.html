@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border-radius: 20px;
+            width: 70%;
+            height: 400px;
+            margin: 50px auto;
+        }
+
+        .linear-gradient {
+            /* first argument specifies the direction from which color transition started as a degree
+                it can be stated as a degree, 90 deg -> horizontal gradient(left to right)
+                45 deg make a diagonal gradient(from bottom left to top right)
+                0 deg make vertical (from bottom to top)
+                it mean 
+                ----
+            ---------------
+            ----      /   -----   => #gradient change from bottom  0 -> 45 ->95 understanding
+            --       /     -------  
+            --      .       -----
+            --      |       -----
+            ---     |      -------
+            -----   |    -------
+            ---------------   
+             */
+            background: linear-gradient(0deg, #CCFFFF, #FFFFCC);
+        }
+
+        .repeating-linear-gradient {
+
+            /*
+            repeating-linear-gradient(90deg, yellow 0px, blue 40px, green 40px, red 80px);
+            0px [yellow -- blend -- blue] 40px [green -- blend -- red] 80px
+            
+            repeating-linear-gradient(90deg, yellow 0px, blue 40px, green 60px, red 80px);
+            0px [yellow -- blend -- blue] 40px [blue -- blend -- green] 60px [green -- blend -- red] 80px;
+            */
+            background: repeating-linear-gradient(90deg, yellow 0px, blue 40px, green 60px, red 80px);
+        }
+
+        body {
+            background: url("https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png")
+        }
+    </style>
+</head>
+
+<body>
+    <div class="linear-gradient"></div>
+    <div class="repeating-linear-gradient"></div>
+    <div class="background-image"></div>
+</body>
+
+</html>
