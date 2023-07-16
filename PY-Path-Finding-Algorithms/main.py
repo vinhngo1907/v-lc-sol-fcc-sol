@@ -19,3 +19,4 @@ root = dataJSON['root']
 
 if __name__=='__main__':
     BFS(tree, root, goals)
+    DFS(tree, root, goals)
