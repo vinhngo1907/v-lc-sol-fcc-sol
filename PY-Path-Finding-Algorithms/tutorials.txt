@@ -1,0 +1,117 @@
+# Hướng dẫn chạy chương trình:
+1. Nhập cây vào file data.json với dạng 
+{
+    "root":Điểm đầu,
+    "goals":[danh sách đích đến],
+    "tree": {
+        node cha:[Danh sách node con],
+        ...
+    },
+    "hill-climb": {
+        "goals":[danh sách đích đến],
+        "graph": {
+            node cha:[Danh sách node con],
+        },
+        "h": {
+            "node": ham chi phi,
+        }
+    }
+}
+Vd:
+{
+    "root": "A",
+    "goals": [
+        "G",
+        "R"
+    ],
+    "tree": {
+        "A": [
+            "B",
+            "C",
+            "D"
+        ],
+        "B": [
+            "M",
+            "N"
+        ],
+        "C": [
+            "L"
+        ],
+        "D": [
+            "O",
+            "P"
+        ],
+        "M": [
+            "X",
+            "Y"
+        ],
+        "N": [
+            "U",
+            "V"
+        ],
+        "O": [
+            "I",
+            "J"
+        ],
+        "Y": [
+            "R",
+            "S"
+        ],
+        "V": [
+            "G",
+            "H"
+        ]
+    },
+    "hill-climb": {
+        "goals": [
+            "B"
+        ],
+        "graph": {
+            "A": [
+                "C",
+                "E",
+                "D"
+            ],
+            "C": [
+                "F"
+            ],
+            "E": [
+                "K",
+                "G"
+            ],
+            "D": [
+                "F",
+                "I"
+            ],
+            "F": [
+                "B"
+            ],
+            "I": [
+                "B",
+                "G"
+            ],
+            "G": [
+                "B",
+                "H"
+            ],
+            "H": [
+                "B"
+            ]
+        },
+        "h": {
+            "A": 20,
+            "C": 15,
+            "E": 7,
+            "D": 6,
+            "F": 10,
+            "B": 0,
+            "H": 3,
+            "G": 5,
+            "I": 8,
+            "K": 12
+        }
+    }
+}
+
+2. Mở cmd ở thư mục hiện tại
+3. Nhập python3 main.py
