@@ -2,6 +2,7 @@ from json import loads
 from bfs import BFS
 from dfs import DFS
 from hc import HC
+from ids import IDS
 
 # Load tree data from file
 filePath = open('./data.json')
@@ -22,3 +23,4 @@ if __name__=='__main__':
     BFS(tree, root, goals)
     DFS(tree, root, goals)
     HC(hill_climb, root, goals_HC)
+    IDS(tree, root, goals, 2)
