@@ -12,3 +12,5 @@ function shuffleArray(arr) {
 
     return arr;
 }
+
+console.log(shuffleArray(arr));

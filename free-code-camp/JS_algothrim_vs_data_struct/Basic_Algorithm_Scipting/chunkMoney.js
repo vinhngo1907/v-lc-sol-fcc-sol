@@ -1,26 +1,30 @@
 /**
- * sol 1
- * @param {*} arr 
- * @param {*} size 
- * @returns 
- */
-// function chunkArrayInGroups(arr, size){
-//     let out = [];
-//     for(let i = 0; i< arr.length; i++){
-//         out.push(arr.slice(i, i + size));
-//         // slice not change arr
-//         // splcie change arr
+ * Write a function that splits an array (first argument) into groups 
+ * the length of size(second argument) and returns them as a two-dimensional array.
+ * Example
+ * chunkArrayInGroups(["a", "b", "c", "d", "e"], 2) // [["a", "b"], ["c", "d"], ["e"]]
+
+*/
+
+//Sol 1 
+// function chunkArrayInGroups(arr, size) {
+//     let out = [], temp = [], j = 1;
+//     for (let i = 0; i < arr.length; i++) {
+//         if (j <= size) {
+//             temp.push(arr[i]);
+//             j++;
+//         }
+//         if (j > size || i == arr.length - 1) {
+//             j = 1;
+//             out.push(temp);
+//             temp = [];
+//         }
 //     }
-//     return out
+//     return out;
 // }
 
 
-/**
- * sol 2
- * @param {*} arr 
- * @param {*} size 
- * @returns 
- */
+// Sol 2
 function chunkArrayInGroups(arr, size) {
     var out = [];
     while (arr.length > 0) {
