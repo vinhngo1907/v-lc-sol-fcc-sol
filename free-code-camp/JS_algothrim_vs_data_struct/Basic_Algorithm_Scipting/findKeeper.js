@@ -3,13 +3,13 @@
 //     return arr.find()
 // }
 
-function findElement(arr, func){
+function findElement(arr, func) {
     /**
      * in to get index arr
      * of to get value arr
      */
-    for(let ele of arr){
-        if(func(ele)){
+    for (let ele of arr) {
+        if (func(ele)) {
             return ele;
         }
     }
