@@ -40,3 +40,24 @@ function fibonacci(n) {
 for (let i = 0; i < 5; i++) {
   console.log(fibonacci(i));
 }
+
+const number = 5;
+let n1 = 0, n2 = 1, nextTerm;
+console.log("Fibonacci series: ");
+
+// for (let i = 1; i <= number; i++) {
+//     console.log(n1);
+//     nextTerm = n1 + n2;
+//     n1 = n2;
+//     n2 = nextTerm;
+// }
+
+console.log(n1);
+console.log(n2); 
+nextTerm = n1 + n2;
+while(nextTerm <= number){
+    console.log(nextTerm)
+    n1 = n2;
+    n2 = nextTerm;
+    nextTerm = n1 + n2;
+}
