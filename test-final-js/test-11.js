@@ -12,6 +12,6 @@
 //   var check = (number1 > 0 && number2 <0)?  true:(number1 <0 && number2 > 0 )? true :  false;
 //   return check;	
 // }
-function checkInt(a,b) {
-	return (a<0 && b>0)||(a>0 && b<0) ? true : false;
+function checkInt(a, b) {
+  return (a < 0 && b > 0) || (a > 0 && b < 0) ? true : false;
 }

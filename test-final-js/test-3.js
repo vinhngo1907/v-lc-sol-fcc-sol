@@ -4,7 +4,7 @@
 
 // function getExtensionFilename(filename) {
 //   // viết code ở đây.
-  
+
 //   for(var i = 1; i <= filename.length; i++){
 //     var result ='';
 //     if(filename[i]==='.'){
@@ -18,5 +18,5 @@
 function getExtensionFilename(s) {
     var arr = [];
     arr = s.split('.');
-    return arr[arr.length-1];
+    return arr[arr.length - 1];
 }
