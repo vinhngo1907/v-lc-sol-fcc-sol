@@ -25,16 +25,16 @@ function fibonacci(n) {
 }
 
 // sol 2
-// function fibonacci(n){
-//     if(n < 0){
-//         return -1;
-//       }
+// function fibonacci(n) {
+//   if (n < 0) {
+//     return -1;
+//   }
 
-//     if(n == 0 || n ==1){
-//         return n;
-//     }
+//   if (n == 0 || n == 1) {
+//     return n;
+//   }
 
-//     return fibonacci(n -1 ) + fibonacci(n - 2);
+//   return fibonacci(n - 1) + fibonacci(n - 2);
 // }
 
 for (let i = 0; i < 5; i++) {
@@ -53,11 +53,11 @@ console.log("Fibonacci series: ");
 // }
 
 console.log(n1);
-console.log(n2); 
+console.log(n2);
 nextTerm = n1 + n2;
-while(nextTerm <= number){
-    console.log(nextTerm)
-    n1 = n2;
-    n2 = nextTerm;
-    nextTerm = n1 + n2;
+while (nextTerm <= number) {
+  console.log(nextTerm)
+  n1 = n2;
+  n2 = nextTerm;
+  nextTerm = n1 + n2;
 }
