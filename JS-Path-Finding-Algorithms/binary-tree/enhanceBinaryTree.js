@@ -117,7 +117,7 @@ function unflatten(arr) {
 
 const tree = unflatten(list_aff);
 console.log(tree)
-tree.forEach((el)=>{
+tree.forEach((el) => {
     console.log(el.children)
 })
 

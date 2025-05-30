@@ -16,6 +16,13 @@ function maxSchedules(tasks) {
     return count;
 }
 
+// const tasks = [
+//     { start: 1, end: 3 },
+//     { start: 2, end: 5 },
+//     { start: 4, end: 6 },
+//     { start: 5, end: 7 },
+// ];
+
 const trips = [
     [1, 3],
     [2, 5],

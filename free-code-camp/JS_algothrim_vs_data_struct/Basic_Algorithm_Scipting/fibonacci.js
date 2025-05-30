@@ -8,20 +8,20 @@
 
 // sol 1
 function fibonacci(n) {
-  let f0 = 0, f1 = 1, fn = 1;
-  if (n < 0) {
-    return -1;
-  }
+	let f0 = 0, f1 = 1, fn = 1;
+	if (n < 0) {
+		return -1;
+	}
 
-  if (n == 0 || n == 1) {
-    return n;
-  }
-  for (let i = 2; i < n; i++) {
-    f0 = f1;
-    f1 = fn;
-    fn = f0 + f1
-  }
-  return fn;
+	if (n == 0 || n == 1) {
+		return n;
+	}
+	for (let i = 2; i < n; i++) {
+		f0 = f1;
+		f1 = fn;
+		fn = f0 + f1
+	}
+	return fn;
 }
 
 // sol 2
@@ -38,7 +38,7 @@ function fibonacci(n) {
 // }
 
 for (let i = 0; i < 5; i++) {
-  console.log(fibonacci(i));
+	console.log(fibonacci(i));
 }
 
 const number = 5;
@@ -56,8 +56,8 @@ console.log(n1);
 console.log(n2);
 nextTerm = n1 + n2;
 while (nextTerm <= number) {
-  console.log(nextTerm)
-  n1 = n2;
-  n2 = nextTerm;
-  nextTerm = n1 + n2;
+	console.log(nextTerm)
+	n1 = n2;
+	n2 = nextTerm;
+	nextTerm = n1 + n2;
 }
