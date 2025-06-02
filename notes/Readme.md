@@ -62,6 +62,7 @@ The project use TravisCI for CI/CD. The project can be accessed at Henry Technic
 3. Individual Cart: Add/Edit/Delete.
 4. Group Cart: Join Cart as Temporary User, Leave Cart, Delete the whole cart.
 5. For simplicity, the cart will be synced every 10 seconds of using real-time technology.
+
 **2. Deployment Process**
 1. Front-end:
 2. Back-end: 
