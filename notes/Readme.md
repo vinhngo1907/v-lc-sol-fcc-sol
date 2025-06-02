@@ -21,9 +21,9 @@
 **Notes**: The local DB will use port 25432. If the port is being used, please change it to a different port in docker-compose.yml and server/.env.
 
 ### Useful Commands
-1. If you want to reset or server separately, go to client, server folders and run yarn dev in each.
-2. Run yarn lint to find and fix issues.
-3. Run yarn db:update to update the schema, it will also run yarn typeorm migration:generate -n MigrationName. The models will be generated automatically (See TypeORM migration)
+1. If you want to reset or server separately, go to ```client```, ```server``` folders and run ```yarn dev``` in each.
+2. Run ```yarn lint``` to find and fix issues.
+3. Run ```yarn db:update``` to update the schema, it will also run ```yarn typeorm migration:generate -n MigrationName```. The models will be generated automatically (See TypeORM migration)
 4. Back-end: ```bash yarn db:migrate``` to run the migration.
 
 ## 2. Deployment Guildline
