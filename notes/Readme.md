@@ -18,7 +18,7 @@
 
 4. The app should be accessible at ```http://localhost:3000```. The API can be accessed at ```http://localhost:3001```.
 
-Notes: The local DB will use port 25432. If the port is being used, please change it to a different port in docker-compose.yml and server/.env.
+**Notes**: The local DB will use port 25432. If the port is being used, please change it to a different port in docker-compose.yml and server/.env.
 
 ### Useful Commands
 1. If you want to reset or server separately, go to client, server folders and run yarn dev in each.
@@ -31,7 +31,7 @@ Notes: The local DB will use port 25432. If the port is being used, please chang
 ### Prerequisites
 - Google Cloud SDK
 - Permission to access resources in henry-technical-2 project
-- Credentials of ***** Statging DB
+- Credentials of __*****__ Statging DB
 
 ### Deployment Steps
 
@@ -56,17 +56,17 @@ The project use TravisCI for CI/CD. The project can be accessed at Henry Technic
 
 ## 3. Other Notes
 ### What I have completed
-1. Functionalities
-    1. Showing menu: Categories and Food. Show Food Detail when clicked.
-    2. Fake login/logout, using JWT for authentication.
-    3. Individual Cart: Add/Edit/Delete.
-    4. Group Cart: Join Cart as Temporary User, Leave Cart, Delete the whole cart.
-    5. For simplicity, the cart will be synced every 10 seconds of using real-time technology.
-2. Deployment Process
-    1. Front-end:
-    2. Back-end: 
-    3. Database:
-    4. CI server:
+**1. Functionalities**
+1. Showing menu: Categories and Food. Show Food Detail when clicked.
+2. Fake login/logout, using JWT for authentication.
+3. Individual Cart: Add/Edit/Delete.
+4. Group Cart: Join Cart as Temporary User, Leave Cart, Delete the whole cart.
+5. For simplicity, the cart will be synced every 10 seconds of using real-time technology.
+**2. Deployment Process**
+1. Front-end:
+2. Back-end: 
+3. Database:
+4. CI server:
 
 # What can be improved
 1. More unit tests for back-end.
