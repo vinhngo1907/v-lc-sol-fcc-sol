@@ -20,18 +20,19 @@ class Bird extends Animal {
 const barrot = new Bird("Con vec");
 barrot.fly()
 //
-function DongVat(name){
+function DongVat(name) {
     this.name = name;
-    this.eat = function(){
+    this.eat = function () {
         console.log(`${this.name} is eating...`)
     }
 }
-DongVat.prototype.run = function(){
+
+DongVat.prototype.run = function () {
     console.log(`${this.name} is running...`);
 }
 
-function Meo(){
-    DongVat.apply(this,arguments);
+function Meo() {
+    DongVat.apply(this, arguments);
 }
 
 Meo.prototype = new DongVat();
